@@ -12,9 +12,18 @@
         
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f8fafc;
             color: #1e293b;
             transition: background-color 0.3s, color 0.3s;
+            background-image: url('light-bg.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        body.dark-mode {
+            background-image: url('dark-bg.jpg');
+            color: #f8fafc;
         }
         
         .gradient-bg {
@@ -50,7 +59,7 @@
         
         /* Dark Mode Styles */
         .dark-mode {
-            background-color: #1e293b;
+            background-color: rgba(30, 41, 59, 0.85);
             color: #f8fafc;
         }
         
@@ -67,12 +76,12 @@
         }
         
         .dark-mode .card {
-            background-color: #334155;
+            background-color: rgba(51, 65, 85, 0.9);
             border-color: #475569;
         }
         
         .dark-mode .project-card {
-            background-color: #334155;
+            background-color: rgba(51, 65, 85, 0.9);
             border-color: #475569;
         }
         
@@ -81,11 +90,11 @@
         }
         
         .dark-mode .bg-white {
-            background-color: #334155;
+            background-color: rgba(51, 65, 85, 0.9);
         }
         
         .dark-mode .bg-gray-100 {
-            background-color: #1e293b;
+            background-color: rgba(30, 41, 59, 0.9);
         }
         
         .dark-mode .text-teal-600 {
@@ -149,7 +158,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.8);
+            background-color: rgba(0,0,0,0.9);
             z-index: 1000;
             overflow-y: auto;
             padding: 2rem;
@@ -165,7 +174,7 @@
         }
 
         .dark-mode .publication-content {
-            background-color: #334155;
+            background-color: rgba(51, 65, 85, 0.95);
         }
 
         .publication-header {
@@ -231,6 +240,15 @@
                 margin-right: 0;
                 margin-bottom: 1rem;
             }
+        }
+
+        /* Background overlay for content */
+        .content-overlay {
+            background-color: rgba(248, 250, 252, 0.9);
+        }
+
+        .dark-mode .content-overlay {
+            background-color: rgba(30, 41, 59, 0.9);
         }
     </style>
 </head>
@@ -568,7 +586,7 @@
             <div class="publication-body">
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&playlist=dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
                         <h3 class="text-gray-800 text-xl font-bold mb-2">Event Camera and LiDAR based Human Tracking for Adverse Lighting Conditions in Subterranean Environments</h3>
@@ -604,7 +622,7 @@
                 </div>
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&playlist=dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
                         <h3 class="text-gray-800 text-xl font-bold mb-2">TFMarker: A Tangible Fiducial Pattern for Enabling Camera-assisted Guided Landing in SubT Environments</h3>
@@ -640,7 +658,7 @@
                 </div>
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&playlist=dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
                         <h3 class="text-gray-800 text-xl font-bold mb-2">EAT: Environment Agnostic Traversability for reactive navigation</h3>
@@ -664,7 +682,7 @@
             <div class="publication-body">
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&playlist=dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
                         <h3 class="text-gray-800 text-xl font-bold mb-2">Belief Scene Graphs: Expanding Partial Scenes with Objects through Computation of Expectation</h3>
@@ -676,19 +694,19 @@
                 </div>
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&playlist=dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
                         <h3 class="text-gray-800 text-xl font-bold mb-2">Leveraging Computation of Expectation Models for Commonsense Affordance Estimation on 3D Scene Graphs</h3>
                         <p class="text-gray-600 mb-4">IROS 2024</p>
                         <p class="text-gray-700 mb-4">
-                            This article studies the commonsense object affordance concept for enabling close-to-human task planning and task optimization of embodied robotic agents in urban environments. The focus of the object affordance is on reasoning how to effectively identify object’s inherent utility during the task execution, which in this work is enabled through the analysis of contextual relations of sparse information of 3D scene graphs. The proposed framework develops a Correlation Information (CECI) model to learn probability distributions using a Graph Convolutional Network, allowing to extract the commonsense affordance for individual members of a semantic class. The overall framework was experimentally validated in a real-world indoor environment, showcasing the ability of the method to level with human commonsense.                        </p>
+                            This article studies the commonsense object affordance concept for enabling close-to-human task planning and task optimization of embodied robotic agents in urban environments. The focus of the object affordance is on reasoning how to effectively identify object's inherent utility during the task execution, which in this work is enabled through the analysis of contextual relations of sparse information of 3D scene graphs. The proposed framework develops a Correlation Information (CECI) model to learn probability distributions using a Graph Convolutional Network, allowing to extract the commonsense affordance for individual members of a semantic class. The overall framework was experimentally validated in a real-world indoor environment, showcasing the ability of the method to level with human commonsense.                        </p>
                         <a href="https://www.roboticsproceedings.org/rss15/p15.pdf" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
                 </div>
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&playlist=dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
                         <h3 class="text-gray-800 text-xl font-bold mb-2">Estimating Commonsense Scene Composition on Belief Scene Graphs</h3>
@@ -712,7 +730,7 @@
             <div class="publication-body">
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&playlist=dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
                         <h3 class="text-gray-800 text-xl font-bold mb-2">Model Predictive Control for Bipedal Locomotion</h3>
