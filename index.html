@@ -6,10 +6,7 @@
     <title>PhD Robotics Student CV</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
-  	/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
         
@@ -115,7 +112,7 @@
             overflow: hidden;
         }
         
-        .video-container video {
+        .video-container iframe {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -205,7 +202,7 @@
             margin-right: 1.5rem;
         }
 
-        .publication-media video,
+        .publication-media iframe,
         .publication-media img {
             width: 100%;
             border-radius: 6px;
@@ -250,38 +247,36 @@
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
             <div class="md:w-1/3 flex justify-center mb-8 md:mb-0">
                 <div class="w-60 h-60 rounded-full border-4 border-white overflow-hidden shadow-xl">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Profile Photo" class="w-full h-full object-cover">
+                    <img src="profile.jpg" alt="Profile Photo" class="w-full h-full object-cover">
                 </div>
             </div>
             <div class="md:w-2/3 text-center md:text-left px-6">
                 <h1 class="text-4xl md:text-5xl font-bold mb-2">Mario Alberto Valdes Saucedo</h1>
                 <h2 class="text-2xl md:text-3xl font-semibold mb-4">PhD Student in Robotics & AI</h2>
-                <!-- <p class="text-lg mb-6 max-w-2xl">Specializing in autonomous systems, computer vision, and robotic manipulation with 5+ years of research experience in human-robot interaction and machine learning applications.</p> -->
-				<div class="space-y-2 mb-6">
-					<div class="flex items-center">
-						<i class="fas fa-envelope text-white-500 mr-3"></i>
-						<span class="text-white-700">Mario.A_Saucedo@hotmail.com</span>
-					</div>
-					<div class="flex items-center">
-						<i class="fas fa-map-marker-alt text-white-500 mr-3"></i>
-						<span class="text-white-700">Lulea, Sweden</span>
-					</div>
-				</div>
+                <div class="space-y-2 mb-6">
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-white-500 mr-3"></i>
+                        <span class="text-white-700">Mario.A_Saucedo@hotmail.com</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-white-500 mr-3"></i>
+                        <span class="text-white-700">Lulea, Sweden</span>
+                    </div>
+                </div>
                 <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <!-- <a href="#contact" class="px-6 py-2 bg-white text-teal-600 rounded-full font-medium hover:bg-gray-100 transition">Contact Me</a> -->
                     <a href="#" class="px-6 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">Download CV</a>
-					<a href="#" class="px-3 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-					<a href="#" class="px-3 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
-						<i class="fab fa-github"></i>
-					</a>
-					<a href="#" class="px-3.5 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
-						<i class="ai ai-google-scholar"></i>
-					</a>
-					<a href="#" class="px-3 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
-						<i class="fab fa-orcid"></i>
-					</a>
+                    <a href="#" class="px-3 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="px-3 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="px-3.5 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
+                        <i class="ai ai-google-scholar"></i>
+                    </a>
+                    <a href="#" class="px-3 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
+                        <i class="fab fa-orcid"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -314,7 +309,7 @@
                         <!-- Timeline Item 1 -->
                         <div class="timeline-item relative pl-16">
                             <div class="absolute left-0 top-0 logo-container">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/2560px-MIT_logo.svg.png" alt="MIT Logo">
+                                <img src="mit-logo.png" alt="MIT Logo">
                             </div>
                             <h3 class="text-gray-800 text-xl font-bold">Research Scientist</h3>
                             <div class="flex flex-wrap items-center text-gray-600 mb-2">
@@ -331,7 +326,7 @@
                         <!-- Timeline Item 2 -->
                         <div class="timeline-item relative pl-16">
                             <div class="absolute left-0 top-0 logo-container">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Stanford_University_logo_%28color%29.png/640px-Stanford_University_logo_%28color%29.png" alt="Stanford Logo">
+                                <img src="stanford-logo.png" alt="Stanford Logo">
                             </div>
                             <h3 class="text-gray-800 text-xl font-bold">PhD Researcher</h3>
                             <div class="flex flex-wrap items-center text-gray-600 mb-2">
@@ -348,7 +343,7 @@
                         <!-- Timeline Item 3 -->
                         <div class="timeline-item relative pl-16">
                             <div class="absolute left-0 top-0 logo-container">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Boston_Dynamics_logo.png/640px-Boston_Dynamics_logo.png" alt="Boston Dynamics Logo">
+                                <img src="boston-dynamics-logo.png" alt="Boston Dynamics Logo">
                             </div>
                             <h3 class="text-gray-800 text-xl font-bold">Robotics Intern</h3>
                             <div class="flex flex-wrap items-center text-gray-600 mb-2">
@@ -373,9 +368,7 @@
                         <!-- Project 1 -->
                         <div class="project-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 cursor-pointer" onclick="openPublications('adaptive-human-robot')">
                             <div class="video-container">
-                                <video autoplay muted loop playsinline>
-                                    <source src="https://assets.mixkit.co/videos/preview/mixkit-robot-working-in-a-factory-28300-large.mp4" type="video/mp4">
-                                </video>
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&playlist=dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <div class="p-6">
                                 <h3 class="text-gray-800 font-bold text-lg mb-2">Adaptive Human-Robot Collaboration</h3>
@@ -387,9 +380,7 @@
                         <!-- Project 2 -->
                         <div class="project-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 cursor-pointer" onclick="openPublications('object-recognition')">
                             <div class="video-container">
-                                <video autoplay muted loop playsinline>
-                                    <source src="https://assets.mixkit.co/videos/preview/mixkit-robot-looking-at-the-camera-28303-large.mp4" type="video/mp4">
-                                </video>
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&playlist=dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <div class="p-6">
                                 <h3 class="text-gray-800 font-bold text-lg mb-2">Real-Time 3D Object Recognition</h3>
@@ -401,9 +392,7 @@
                         <!-- Project 3 -->
                         <div class="project-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 cursor-pointer" onclick="openPublications('tactile-manipulation')">
                             <div class="video-container">
-                                <video autoplay muted loop playsinline>
-                                    <source src="https://assets.mixkit.co/videos/preview/mixkit-robotic-arm-in-a-factory-28301-large.mp4" type="video/mp4">
-                                </video>
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&playlist=dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <div class="p-6">
                                 <h3 class="text-gray-800 font-bold text-lg mb-2">Tactile-Based Manipulation</h3>
@@ -415,9 +404,7 @@
                         <!-- Project 4 -->
                         <div class="project-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 cursor-pointer" onclick="openPublications('locomotion-control')">
                             <div class="video-container">
-                                <video autoplay muted loop playsinline>
-                                    <source src="https://assets.mixkit.co/videos/preview/mixkit-humanoid-robot-walking-28302-large.mp4" type="video/mp4">
-                                </video>
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&playlist=dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <div class="p-6">
                                 <h3 class="text-gray-800 font-bold text-lg mb-2">Dynamic Locomotion Control</h3>
@@ -536,7 +523,7 @@
                     <div class="space-y-6">
                         <div class="flex items-start">
                             <div class="logo-container mr-4 flex-shrink-0">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Stanford_University_logo_%28color%29.png/640px-Stanford_University_logo_%28color%29.png" alt="Stanford Logo">
+                                <img src="stanford-logo.png" alt="Stanford Logo">
                             </div>
                             <div>
                                 <h3 class="text-gray-800 font-bold">PhD in Robotics</h3>
@@ -546,7 +533,7 @@
                         </div>
                         <div class="flex items-start">
                             <div class="logo-container mr-4 flex-shrink-0">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/ETH_Z%C3%BCrich_Logo_black.svg/2560px-ETH_Z%C3%BCrich_Logo_black.svg.png" alt="ETH Zurich Logo">
+                                <img src="eth-logo.png" alt="ETH Zurich Logo">
                             </div>
                             <div>
                                 <h3 class="text-gray-800 font-bold">MSc in Electrical Engineering</h3>
@@ -556,7 +543,7 @@
                         </div>
                         <div class="flex items-start">
                             <div class="logo-container mr-4 flex-shrink-0">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/University_of_Cambridge_coat_of_arms.svg/1200px-University_of_Cambridge_coat_of_arms.svg.png" alt="Cambridge Logo">
+                                <img src="cambridge-logo.png" alt="Cambridge Logo">
                             </div>
                             <div>
                                 <h3 class="text-gray-800 font-bold">BSc in Mechanical Engineering</h3>
@@ -581,9 +568,7 @@
             <div class="publication-body">
                 <div class="publication-item">
                     <div class="publication-media">
-                        <video autoplay muted loop playsinline>
-                            <source src="https://assets.mixkit.co/videos/preview/mixkit-robot-working-in-a-factory-28300-large.mp4" type="video/mp4">
-                        </video>
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
                         <h3 class="text-gray-800 text-xl font-bold mb-2">Learning Adaptive Human-Robot Collaboration</h3>
@@ -596,7 +581,7 @@
                 </div>
                 <div class="publication-item">
                     <div class="publication-media">
-                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80" alt="Human-Robot Interaction">
+                        <img src="human-robot-interaction.jpg" alt="Human-Robot Interaction">
                     </div>
                     <div class="publication-info">
                         <h3 class="text-gray-800 text-xl font-bold mb-2">Shared Autonomy in Collaborative Robotics</h3>
@@ -621,9 +606,7 @@
             <div class="publication-body">
                 <div class="publication-item">
                     <div class="publication-media">
-                        <video autoplay muted loop playsinline>
-                            <source src="https://assets.mixkit.co/videos/preview/mixkit-robot-looking-at-the-camera-28303-large.mp4" type="video/mp4">
-                        </video>
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
                         <h3 class="text-gray-800 text-xl font-bold mb-2">Multi-Modal Object Recognition for Robotic Manipulation</h3>
@@ -636,7 +619,7 @@
                 </div>
                 <div class="publication-item">
                     <div class="publication-media">
-                        <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="3D Object Recognition">
+                        <img src="object-recognition.jpg" alt="3D Object Recognition">
                     </div>
                     <div class="publication-info">
                         <h3 class="text-gray-800 text-xl font-bold mb-2">Few-Shot Learning for Industrial Object Recognition</h3>
@@ -656,158 +639,132 @@
         <div class="publication-content">
             <div class="publication-header">
                 <h2 class="text-gray-800 text-2xl font-bold">Tactile Manipulation Publications</h2>
-                        <span class="close-btn" onclick="closePublications('tactile-manipulation')">&times;</span>
+                <span class="close-btn" onclick="closePublications('tactile-manipulation')">&times;</span>
+            </div>
+            <div class="publication-body">
+                <div class="publication-item">
+                    <div class="publication-media">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <div class="publication-body">
-                        <div class="publication-item">
-                            <div class="publication-media">
-                                <video autoplay muted loop playsinline>
-                                    <source src="https://assets.mixkit.co/videos/preview/mixkit-robotic-arm-in-a-factory-28301-large.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="publication-info">
-                                <h3 class="text-gray-800 text-xl font-bold mb-2">Tactile Feedback for Robotic Grasping</h3>
-                                <p class="text-gray-600 mb-4">RSS 2019</p>
-                                <p class="text-gray-700 mb-4">
-                                    We present a tactile feedback system that significantly improves robotic grasping success rates for delicate objects. By integrating high-resolution tactile sensors with a novel control algorithm, our system achieves a 45% improvement in successful grasps compared to vision-only approaches.
-                                </p>
-                                <a href="https://www.roboticsproceedings.org/rss15/p15.pdf" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
-                            </div>
-                        </div>
-                        <div class="publication-item">
-                            <div class="publication-media">
-                                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Tactile Sensors">
-                            </div>
-                            <div class="publication-info">
-                                <h3 class="text-gray-800 text-xl font-bold mb-2">Bio-Inspired Tactile Sensors for Robotic Manipulation</h3>
-                                <p class="text-gray-600 mb-4">Nature Robotics 2020</p>
-                                <p class="text-gray-700 mb-4">
-                                    Inspired by human tactile sensing, we developed a novel tactile sensor array that provides high-resolution force and slip detection. The sensor enables robots to perform delicate manipulation tasks with human-like dexterity, including handling fragile objects and adjusting grip force in real-time.
-                                </p>
-                                <a href="#" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
-                            </div>
-                        </div>
+                    <div class="publication-info">
+                        <h3 class="text-gray-800 text-xl font-bold mb-2">Tactile Feedback for Robotic Grasping</h3>
+                        <p class="text-gray-600 mb-4">RSS 2019</p>
+                        <p class="text-gray-700 mb-4">
+                            We present a tactile feedback system that significantly improves robotic grasping success rates for delicate objects. By integrating high-resolution tactile sensors with a novel control algorithm, our system achieves a 45% improvement in successful grasps compared to vision-only approaches.
+                        </p>
+                        <a href="https://www.roboticsproceedings.org/rss15/p15.pdf" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-media">
+                        <img src="tactile-sensors.jpg" alt="Tactile Sensors">
+                    </div>
+                    <div class="publication-info">
+                        <h3 class="text-gray-800 text-xl font-bold mb-2">Bio-Inspired Tactile Sensors for Robotic Manipulation</h3>
+                        <p class="text-gray-600 mb-4">Nature Robotics 2020</p>
+                        <p class="text-gray-700 mb-4">
+                            Inspired by human tactile sensing, we developed a novel tactile sensor array that provides high-resolution force and slip detection. The sensor enables robots to perform delicate manipulation tasks with human-like dexterity, including handling fragile objects and adjusting grip force in real-time.
+                        </p>
+                        <a href="#" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Locomotion Control Publications -->
-            <div id="locomotion-control" class="publication-modal">
-                <div class="publication-content">
-                    <div class="publication-header">
-                        <h2 class="text-gray-800 text-2xl font-bold">Locomotion Control Publications</h2>
-                        <span class="close-btn" onclick="closePublications('locomotion-control')">&times;</span>
+    <!-- Locomotion Control Publications -->
+    <div id="locomotion-control" class="publication-modal">
+        <div class="publication-content">
+            <div class="publication-header">
+                <h2 class="text-gray-800 text-2xl font-bold">Locomotion Control Publications</h2>
+                <span class="close-btn" onclick="closePublications('locomotion-control')">&times;</span>
+            </div>
+            <div class="publication-body">
+                <div class="publication-item">
+                    <div class="publication-media">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <div class="publication-body">
-                        <div class="publication-item">
-                            <div class="publication-media">
-                                <video autoplay muted loop playsinline>
-                                    <source src="https://assets.mixkit.co/videos/preview/mixkit-humanoid-robot-walking-28302-large.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="publication-info">
-                                <h3 class="text-gray-800 text-xl font-bold mb-2">Model Predictive Control for Bipedal Locomotion</h3>
-                                <p class="text-gray-600 mb-4">Humanoids 2018</p>
-                                <p class="text-gray-700 mb-4">
-                                    Our model predictive control framework enables stable bipedal locomotion over uneven terrain. The system combines simplified dynamics models with online optimization to achieve robust walking and running gaits, demonstrating successful traversal of obstacles up to 15cm in height.
-                                </p>
-                                <a href="https://ieeexplore.ieee.org/document/8625833" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
-                            </div>
-                        </div>
-                        <div class="publication-item">
-                            <div class="publication-media">
-                                <img src="https://images.unsplash.com/photo-1677442136018-c6a85a9c9e6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Humanoid Robot">
-                            </div>
-                            <div class="publication-info">
-                                <h3 class="text-gray-800 text-xl font-bold mb-2">Learning-Based Recovery Strategies for Humanoid Robots</h3>
-                                <p class="text-gray-600 mb-4">Science Robotics 2019</p>
-                                <p class="text-gray-700 mb-4">
-                                    We present a learning-based approach for humanoid robots to recover from slips and pushes. Using deep reinforcement learning, our system learns recovery strategies that are 78% more effective than traditional control methods, enabling robots to maintain balance in challenging conditions.
-                                </p>
-                                <a href="#" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
-                            </div>
-                        </div>
+                    <div class="publication-info">
+                        <h3 class="text-gray-800 text-xl font-bold mb-2">Model Predictive Control for Bipedal Locomotion</h3>
+                        <p class="text-gray-600 mb-4">Humanoids 2018</p>
+                        <p class="text-gray-700 mb-4">
+                            Our model predictive control framework enables stable bipedal locomotion over uneven terrain. The system combines simplified dynamics models with online optimization to achieve robust walking and running gaits, demonstrating successful traversal of obstacles up to 15cm in height.
+                        </p>
+                        <a href="https://ieeexplore.ieee.org/document/8625833" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-media">
+                        <img src="humanoid-robot.jpg" alt="Humanoid Robot">
+                    </div>
+                    <div class="publication-info">
+                        <h3 class="text-gray-800 text-xl font-bold mb-2">Learning-Based Recovery Strategies for Humanoid Robots</h3>
+                        <p class="text-gray-600 mb-4">Science Robotics 2019</p>
+                        <p class="text-gray-700 mb-4">
+                            We present a learning-based approach for humanoid robots to recover from slips and pushes. Using deep reinforcement learning, our system learns recovery strategies that are 78% more effective than traditional control methods, enabling robots to maintain balance in challenging conditions.
+                        </p>
+                        <a href="#" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Footer -->
-            <footer class="bg-gray-100 py-8">
-                <div class="container mx-auto px-6 text-center">
-                    <p class="text-gray-600">© 2023 Dr. Alex Johnson - Robotics Researcher</p>
-                </div>
-            </footer>
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-600">© 2023 Mario Alberto Valdes Saucedo - Robotics Researcher</p>
+        </div>
+    </footer>
 
-            <script>
-                // Dark mode toggle functionality
-                const darkModeToggle = document.getElementById('darkModeToggle');
-                const body = document.body;
+    <script>
+        // Dark mode toggle functionality
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                darkModeToggle.classList.add('bg-gray-800', 'text-white');
+                darkModeToggle.classList.remove('bg-white', 'text-gray-800');
+            } else {
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                darkModeToggle.classList.add('bg-white', 'text-gray-800');
+                darkModeToggle.classList.remove('bg-gray-800', 'text-white');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
                 
-                darkModeToggle.addEventListener('click', () => {
-                    body.classList.toggle('dark-mode');
-                    
-                    if (body.classList.contains('dark-mode')) {
-                        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-                        darkModeToggle.classList.add('bg-gray-800', 'text-white');
-                        darkModeToggle.classList.remove('bg-white', 'text-gray');
-                    } else {
-                        darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-                        darkModeToggle.classList.add('bg-white', 'text-gray');
-                        darkModeToggle.classList.remove('bg-gray-800', 'text-white');
-                    }
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
                 });
-                
-                // Smooth scrolling for anchor links
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        
-                        document.querySelector(this.getAttribute('href')).scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    });
-                });
+            });
+        });
 
-                // Ensure videos play properly on all devices
-                document.addEventListener('DOMContentLoaded', function() {
-                    const videos = document.querySelectorAll('video');
-                    
-                    videos.forEach(video => {
-                        // Ensure videos play inline on iOS
-                        video.setAttribute('playsinline', '');
-                        video.setAttribute('webkit-playsinline', '');
-                        
-                        // Attempt to play the video (may require user interaction on some browsers)
-                        const playPromise = video.play();
-                        
-                        if (playPromise !== undefined) {
-                            playPromise.catch(error => {
-                                console.log('Video autoplay prevented:', error);
-                                // Fallback to showing the first frame
-                                video.pause();
-                            });
-                        }
-                    });
-                });
+        // Publication modal functions
+        function openPublications(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
 
-                // Publication modal functions
-                function openPublications(modalId) {
-                    document.getElementById(modalId).style.display = 'block';
-                    document.body.style.overflow = 'hidden';
-                }
+        function closePublications(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
 
-                function closePublications(modalId) {
-                    document.getElementById(modalId).style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-
-                // Close modal when clicking outside of it
-                window.onclick = function(event) {
-                    if (event.target.classList.contains('publication-modal')) {
-                        event.target.style.display = 'none';
-                        document.body.style.overflow = 'auto';
-                    }
-                }
-            </script>
-        </body>
-        </html>
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('publication-modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
