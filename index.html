@@ -117,7 +117,7 @@
         .video-container {
             position: relative;
             width: 100%;
-            height: 240px;
+            height: 250px;
             overflow: hidden;
         }
         
@@ -183,6 +183,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background: linear-gradient(90deg, #2A7B9B 0%, #57C785 100%);
         }
 
         .dark-mode .publication-header {
@@ -242,6 +243,10 @@
             }
         }
 
+        .justify {
+            text-align: justify; 
+        }
+
         /* Background overlay for content */
         .content-overlay {
             background-color: rgba(248, 250, 252, 0.9);
@@ -255,7 +260,7 @@
 <body class="text-gray-800">
     <!-- Dark Mode Toggle -->
     <div class="fixed top-4 right-4 z-50">
-        <button id="darkModeToggle" class="p-2 rounded-full bg-white shadow-lg text-gray-800 hover:bg-gray-100 transition">
+        <button id="darkModeToggle" class="px-3 p-2 rounded-full bg-white shadow-lg text-gray-800 hover:bg-gray-100 transition">
             <i class="fas fa-moon"></i>
         </button>
     </div>
@@ -282,17 +287,17 @@
                     </div>
                 </div>
                 <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="#" class="px-6 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">Download CV</a>
-                    <a href="#" class="px-3 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
+                    <a href="#" target="_blank" class="px-6 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">Download CV</a>
+                    <a href="#" target="_blank" class="px-3 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://github.com/Mario-Saucedo" class="px-3 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
+                    <a href="https://github.com/Mario-Saucedo" target="_blank" class="px-3 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://scholar.google.com/citations?user=spsQuzkAAAAJ&hl=sv&oi=ao" class="px-3.5 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
+                    <a href="https://scholar.google.com/citations?user=spsQuzkAAAAJ&hl=sv&oi=ao" target="_blank" class="px-3.5 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
                         <i class="ai ai-google-scholar"></i>
                     </a>
-                    <a href="#" class="px-3 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
+                    <a href="#" target="_blank" class="px-3 py-2 border border-white text-white rounded-full font-medium hover:bg-white hover:text-teal-600 transition">
                         <i class="fab fa-orcid"></i>
                     </a>
                 </div>
@@ -310,10 +315,10 @@
                     <h2 class="text-2xl font-bold mb-6 flex items-center section-title">
                         <i class="fas fa-robot mr-3 text-teal-500"></i> About Me
                     </h2>
-                    <p class="text-gray-700 mb-4">
+                    <p class="justify text-gray-700 mb-4">
                         I am a passionate Robotics researcher with a PhD from Stanford University, specializing in autonomous systems and human-robot interaction. My research focuses on developing intelligent robotic systems that can seamlessly collaborate with humans in dynamic environments.
                     </p>
-                    <p class="text-gray-700">
+                    <p class="justify text-gray-700">
                         With extensive experience in ROS, computer vision, and machine learning, I've published multiple papers in top-tier robotics conferences and journals. I'm particularly interested in applying cutting-edge AI techniques to solve real-world robotic challenges in healthcare, manufacturing, and service industries.
                     </p>
                 </section>
@@ -350,7 +355,7 @@
                                 <span class="text-sm">Sep 2018 - Dec 2020</span>
                             </div>
                             <ul class="list-disc pl-5 text-gray-700 space-y-2">
-                                <li>Thesys title:  ...</li>
+                                <li>Thesys title: Software architecture proposal for navigation and decisions of autonomous ground vehicles in controlled environments with unavoidable collision scenarios.</li>
                             </ul>
                         </div>
 
@@ -364,9 +369,9 @@
                                 <span class="mr-4">Tecnológico de Monterrey</span>
                                 <span class="text-sm">Jun 2013 - Aug 2018</span>
                             </div>
-                            <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <!-- <ul class="list-disc pl-5 text-gray-700 space-y-2">
                                 <li>Thesys title:  ...</li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                 </section>
@@ -374,11 +379,11 @@
                 <!-- Projects Section -->
                 <section class="card bg-white p-8 rounded-lg shadow-md border border-gray-100">
                     <h2 class="text-2xl font-bold mb-6 flex items-center section-title">
-                        <i class="fas fa-project-diagram mr-3 text-teal-500"></i> Research Fields
+                        <i class="fas fa-file-text mr-3 text-teal-500"></i> Publications
                     </h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- Project 1 -->
-                        <div class="project-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 cursor-pointer" onclick="openPublications('adaptive-human-robot')">
+                        <div class="project-card gradient-bg rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 cursor-pointer" onclick="openPublications('adaptive-human-robot')">
                             <div class="video-container">
                                 <iframe src="https://www.youtube.com/embed/kIJ61VyIVTM?autoplay=1&mute=1&loop=1&controls=0&playlist=kIJ61VyIVTM" frameborder="0" allowfullscreen></iframe>
                             </div>
@@ -393,7 +398,7 @@
                         </div>
 
                         <!-- Project 2 -->
-                        <div class="project-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 cursor-pointer" onclick="openPublications('object-recognition')">
+                        <div class="project-card gradient-bg rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 cursor-pointer" onclick="openPublications('object-recognition')">
                             <div class="video-container">
                                 <iframe src="https://www.youtube.com/embed/ZRf0krEkHZ0?autoplay=1&mute=1&loop=1&controls=0&playlist=ZRf0krEkHZ0" frameborder="0" allowfullscreen></iframe>
                             </div>
@@ -406,7 +411,7 @@
                         </div>
 
                         <!-- Project 3 -->
-                        <div class="project-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 cursor-pointer" onclick="openPublications('tactile-manipulation')">
+                        <div class="project-card gradient-bg rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 cursor-pointer" onclick="openPublications('tactile-manipulation')">
                             <div class="video-container">
                                 <iframe src="https://www.youtube.com/embed/hsGlSCa12iY?autoplay=1&mute=1&loop=1&controls=0&playlist=hsGlSCa12iY" frameborder="0" allowfullscreen></iframe>
                             </div>
@@ -420,9 +425,9 @@
                         </div>
 
                         <!-- Project 4 -->
-                        <div class="project-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 cursor-pointer" onclick="openPublications('locomotion-control')">
+                        <div class="project-card gradient-bg rounded-lg shadow-md overflow-hidden border border-gray-100 transition duration-300 cursor-pointer" onclick="openPublications('locomotion-control')">
                             <div class="video-container">
-                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&playlist=dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/aae73HyCE_A?autoplay=1&mute=1&loop=1&controls=0&playlist=aae73HyCE_A" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <div class="p-6">
                                 <h3 class="text-gray-800 font-bold text-lg mb-2">3D Scene Graphs</h3>
@@ -530,7 +535,7 @@
                             </a>
                         </div>
                     </div>
-                    <a href="https://scholar.google.com/citations?user=spsQuzkAAAAJ&hl=sv&oi=ao" class="inline-block mt-4 text-teal-500 hover:underline text-sm">View all publications →</a>
+                    <a href="https://scholar.google.com/citations?user=spsQuzkAAAAJ&hl=sv&oi=ao" target="_blank" class="inline-block mt-4 text-teal-500 hover:underline text-sm">View all publications →</a>
                 </section>
 
                 <!-- Education Section -->
@@ -586,14 +591,19 @@
             <div class="publication-body">
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/kIJ61VyIVTM?autoplay=1&mute=1&loop=1&controls=0&playlist=kIJ61VyIVTM" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="560" height="327" src="https://www.youtube.com/embed/kIJ61VyIVTM?autoplay=1&mute=1&loop=1&controls=0&playlist=kIJ61VyIVTM" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
-                        <h3 class="text-gray-800 text-xl font-bold mb-2">Event Camera and LiDAR based Human Tracking for Adverse Lighting Conditions in Subterranean Environments</h3>
-                        <p class="text-gray-600 mb-4">IFAC 2023</p>
-                        <p class="text-gray-700 mb-4">
-                            In this article, we propose a novel LiDAR and event camera fusion modality for subterranean (SubT) environments for fast and precise object and human detection in a wide variety of adverse lighting conditions, such as low or no light, high-contrast zones and in the presence of blinding light sources. In the proposed approach, information from the event camera and LiDAR are fused to localize a human or an object-of-interest in a robot's local frame. The local detection is then transformed into the inertial frame and used to set references for a Nonlinear Model Predictive Controller (NMPC) for reactive tracking of humans or objects in SubT environments. The proposed novel fusion uses intensity filtering and K-means clustering on the LiDAR point cloud and frequency filtering and connectivity clustering on the events induced in an event camera by the returning LiDAR beams. The centroids of the clusters in the event camera and LiDAR streams are then paired to localize reflective markers present on safety vests and signs in SubT environments. The efficacy of the proposed scheme has been experimentally validated in a real SubT environment (a mine) with a Pioneer 3AT mobile robot. The experimental results show real-time performance for human detection and the NMPC-based controller allows for reactive tracking of a human or object of interest, even in complete darkness.                        </p>
-                        <a href="https://www.sciencedirect.com/science/article/pii/S2405896323003427" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
+                        <div class="border-l-4 border-teal-500 pl-4">
+                            <h3 class="text-gray-800 text-xl font-bold mb-2">Event Camera and LiDAR based Human Tracking for Adverse Lighting Conditions in Subterranean Environments</h3>
+                            <p class="text-gray-600 mb-4">IFAC 2023</p>
+                        </div>
+                        <div>
+                            <p class="justify text-gray-700 mb-4">
+                                In this article, we propose a novel LiDAR and event camera fusion modality for subterranean (SubT) environments for fast and precise object and human detection in a wide variety of adverse lighting conditions, such as low or no light, high-contrast zones and in the presence of blinding light sources. In the proposed approach, information from the event camera and LiDAR are fused to localize a human or an object-of-interest in a robot's local frame. The local detection is then transformed into the inertial frame and used to set references for a Nonlinear Model Predictive Controller (NMPC) for reactive tracking of humans or objects in SubT environments. The proposed novel fusion uses intensity filtering and K-means clustering on the LiDAR point cloud and frequency filtering and connectivity clustering on the events induced in an event camera by the returning LiDAR beams. The centroids of the clusters in the event camera and LiDAR streams are then paired to localize reflective markers present on safety vests and signs in SubT environments. The efficacy of the proposed scheme has been experimentally validated in a real SubT environment (a mine) with a Pioneer 3AT mobile robot. The experimental results show real-time performance for human detection and the NMPC-based controller allows for reactive tracking of a human or object of interest, even in complete darkness.                        
+                            </p>
+                        </div>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S2405896323003427" target="_blank" class="inline-block bg-teal-500 text-gray-800 px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
                 </div>
                 <div class="publication-item">
@@ -601,11 +611,16 @@
                         <img src="images/one.png" alt="Human-Robot Interaction">
                     </div>
                     <div class="publication-info">
-                        <h3 class="text-gray-800 text-xl font-bold mb-2">MSL3D: Pointcloud-based muck pile Segmentation and Localization in Unknown SubT Environments</h3>
-                        <p class="text-gray-600 mb-4">MED 2023</p>
-                        <p class="text-gray-700 mb-4">
-                            This article presents MSL3D, a novel framework for pointcloud-based muck pile Segmentation and Localization in unknown Sub-Terranean (Sub-T) environments. The proposed framework is capable of progressively segmenting the muck piles and extracting their location in a global constructed point cloud map, using the autonomy sensor payload of mining or robotic platforms. MSL3D is structured in a two layer novel architecture that relies on the geometric properties of muck piles in underground tunnels, where the first layer extracts a local Volume Of Interest (VOI) proposal area out of the registered point cloud and the second layer is refining the muck pile extraction of each VOI proposal in the global optimized point cloud map. The first layer of MSL3D is extracting local VOIs bounded in the look-ahead surroundings of the platform. More specifically, the ceiling, left and right walls as well as the ground are continuously segmented using progessive RANSAC, searching for inclination in the segmented ground area to keep as the next-best local VOI. Once a local VOI is extracted, it is transmitted to the second layer, where it is converted to the world frame coordinates. In the sequel, a morphological filter is applied, in order to segment ground and nonground points, followed by RANSAC once again to extract the remaining points corresponding to the right and left walls. In this approach, Euclidean clustering is utilized to keep the cluster with the majority of points, which is assumed to belong to the muck pile. The efficacy of the proposed novel scheme was successfully and experimentally validated in real and large scale SubT environments by utilizing a custom-made UAV.                        </p>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10185912" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
+                        <div class="border-l-4 border-teal-500 pl-4">
+                            <h3 class="text-gray-800 text-xl font-bold mb-2">MSL3D: Pointcloud-based muck pile Segmentation and Localization in Unknown SubT Environments</h3>
+                            <p class="text-gray-600 mb-4">MED 2023</p>
+                        </div>
+                        <div>
+                            <p class="justify text-gray-700 mb-4">
+                                This article presents MSL3D, a novel framework for pointcloud-based muck pile Segmentation and Localization in unknown Sub-Terranean (Sub-T) environments. The proposed framework is capable of progressively segmenting the muck piles and extracting their location in a global constructed point cloud map, using the autonomy sensor payload of mining or robotic platforms. MSL3D is structured in a two layer novel architecture that relies on the geometric properties of muck piles in underground tunnels, where the first layer extracts a local Volume Of Interest (VOI) proposal area out of the registered point cloud and the second layer is refining the muck pile extraction of each VOI proposal in the global optimized point cloud map. The first layer of MSL3D is extracting local VOIs bounded in the look-ahead surroundings of the platform. More specifically, the ceiling, left and right walls as well as the ground are continuously segmented using progessive RANSAC, searching for inclination in the segmented ground area to keep as the next-best local VOI. Once a local VOI is extracted, it is transmitted to the second layer, where it is converted to the world frame coordinates. In the sequel, a morphological filter is applied, in order to segment ground and nonground points, followed by RANSAC once again to extract the remaining points corresponding to the right and left walls. In this approach, Euclidean clustering is utilized to keep the cluster with the majority of points, which is assumed to belong to the muck pile. The efficacy of the proposed novel scheme was successfully and experimentally validated in real and large scale SubT environments by utilizing a custom-made UAV.                        
+                            </p>
+                        </div>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10185912" target="_blank" class="inline-block bg-teal-500 text-gray-800 px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
                 </div>
                 <div class="publication-item">
@@ -613,23 +628,33 @@
                         <img src="images/two.png" alt="Human-Robot Interaction">
                     </div>
                     <div class="publication-info">
-                        <h3 class="text-gray-800 text-xl font-bold mb-2">BOX3D: Lightweight Camera-LiDAR Fusion for 3D Object Detection and Localization</h3>
-                        <p class="text-gray-600 mb-4">MED 2024</p>
-                        <p class="text-gray-700 mb-4">
-                            Object detection and global localization play a crucial role in robotics, spanning across a great spectrum of applications from autonomous cars to multi-layered 3D Scene Graphs for semantic scene understanding. This article proposes BOX3D, a novel multi-modal and lightweight scheme for localizing objects of interest by fusing the information from RGB camera and 3D LiDAR. BOX3D is structured around a three-layered architecture, building up from the local perception of the incoming sequential sensor data to the global perception refinement that covers for outliers and the general consistency of each object's observation. More specifically, the first layer handles the low-level fusion of camera and LiDAR data for initial 3D bounding box extraction. The second layer converts each LiDAR's scan 3D bounding boxes to the world coordinate frame and applies a spatial pairing and merging mechanism to maintain the uniqueness of objects observed from different viewpoints. Finally, BOX3D integrates the third layer that supervises the consistency of the results on the global map iteratively, using a point-to-voxel comparison for identifying all points in the global map that belong to the object. Benchmarking results of the proposed novel architecture are showcased in multiple experimental trials on public state-of-the-art large-scale dataset of urban environments.                        </p>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10566236" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
+                        <div class="border-l-4 border-teal-500 pl-4">
+                            <h3 class="text-gray-800 text-xl font-bold mb-2">BOX3D: Lightweight Camera-LiDAR Fusion for 3D Object Detection and Localization</h3>
+                            <p class="text-gray-600 mb-4">MED 2024</p>
+                        </div>
+                        <div>
+                            <p class="justify text-gray-700 mb-4">
+                                Object detection and global localization play a crucial role in robotics, spanning across a great spectrum of applications from autonomous cars to multi-layered 3D Scene Graphs for semantic scene understanding. This article proposes BOX3D, a novel multi-modal and lightweight scheme for localizing objects of interest by fusing the information from RGB camera and 3D LiDAR. BOX3D is structured around a three-layered architecture, building up from the local perception of the incoming sequential sensor data to the global perception refinement that covers for outliers and the general consistency of each object's observation. More specifically, the first layer handles the low-level fusion of camera and LiDAR data for initial 3D bounding box extraction. The second layer converts each LiDAR's scan 3D bounding boxes to the world coordinate frame and applies a spatial pairing and merging mechanism to maintain the uniqueness of objects observed from different viewpoints. Finally, BOX3D integrates the third layer that supervises the consistency of the results on the global map iteratively, using a point-to-voxel comparison for identifying all points in the global map that belong to the object. Benchmarking results of the proposed novel architecture are showcased in multiple experimental trials on public state-of-the-art large-scale dataset of urban environments.                        
+                            </p>
+                        </div>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10566236" target="_blank" class="inline-block bg-teal-500 text-gray-800 px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
                 </div>
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/Zh13OObp15Q?autoplay=1&mute=1&loop=1&controls=0&playlist=Zh13OObp15Q" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="560" height="327" src="https://www.youtube.com/embed/Zh13OObp15Q?autoplay=1&mute=1&loop=1&controls=0&playlist=Zh13OObp15Q" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
-                        <h3 class="text-gray-800 text-xl font-bold mb-2">TFMarker: A Tangible Fiducial Pattern for Enabling Camera-assisted Guided Landing in SubT Environments</h3>
-                        <p class="text-gray-600 mb-4">ICCAS 2024</p>
-                        <p class="text-gray-700 mb-4">
-                            Visual servoing plays a crucial role in robotics, spanning across a great spectrum of applications from autonomous cars to aerial manipulation. This article proposes TFMarker, a novel tangible fiducial pattern for enabling camera-assisted guided landing of UAVs by using the visual features from color markers as the main source of information. TFMarker is structured around a 4-point fiducial marker, allowing for accurate, precise, and consistent pose estimation in different environments and lighting conditions, while also offering resilience to motion blur. The presented detection framework is based on a three-step architecture, where the first step uses Gaussian and color filtering in addition to morphological operation in order to generate a robust detection of the markers. The second step uses the Gift Wrapping Algorithm, to organize the same-color markers based on their relative positioning with respect to the off-color marker. Finally, the Perspective-n-Point optimization problem is solved in order to extract the pose (i.e. position and orientation) of the proposed pattern with respect to the vision sensor. The efficacy of the proposed scheme has been extensively validated in indoor and SubT environments for the task of autonomous landing using a custom-made UAV. The experimental results showcase the performance of the proposed method, which presents a better detection rate in both environments while retaining similar accuracy and precision to the baseline approach.                        </p>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10773374" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
+                        <div class="border-l-4 border-teal-500 pl-4">
+                            <h3 class="text-gray-800 text-xl font-bold mb-2">TFMarker: A Tangible Fiducial Pattern for Enabling Camera-assisted Guided Landing in SubT Environments</h3>
+                            <p class="text-gray-600 mb-4">ICCAS 2024</p>
+                        </div>
+                        <div>
+                            <p class="justify text-gray-700 mb-4">
+                                Visual servoing plays a crucial role in robotics, spanning across a great spectrum of applications from autonomous cars to aerial manipulation. This article proposes TFMarker, a novel tangible fiducial pattern for enabling camera-assisted guided landing of UAVs by using the visual features from color markers as the main source of information. TFMarker is structured around a 4-point fiducial marker, allowing for accurate, precise, and consistent pose estimation in different environments and lighting conditions, while also offering resilience to motion blur. The presented detection framework is based on a three-step architecture, where the first step uses Gaussian and color filtering in addition to morphological operation in order to generate a robust detection of the markers. The second step uses the Gift Wrapping Algorithm, to organize the same-color markers based on their relative positioning with respect to the off-color marker. Finally, the Perspective-n-Point optimization problem is solved in order to extract the pose (i.e. position and orientation) of the proposed pattern with respect to the vision sensor. The efficacy of the proposed scheme has been extensively validated in indoor and SubT environments for the task of autonomous landing using a custom-made UAV. The experimental results showcase the performance of the proposed method, which presents a better detection rate in both environments while retaining similar accuracy and precision to the baseline approach.                        
+                            </p>
+                        </div>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10773374" target="_blank" class="inline-block bg-teal-500 text-gray-800 px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
                 </div>
             </div>
@@ -649,23 +674,33 @@
                         <img src="images/three.png" alt="3D Object Recognition">
                     </div>
                     <div class="publication-info">
-                        <h3 class="text-gray-800 text-xl font-bold mb-2">Memory Enabled Segmentation of Terrain for Traversability based Reactive Navigation</h3>
-                        <p class="text-gray-600 mb-4">ROBIO 2023</p>
-                        <p class="text-gray-700 mb-4">
-                            This article presents a novel 2D traversability image estimation for local reactive navigation, that attributes the fusion of a novel Convolutional Neural Network (CNN) for coarse semantic segmentation on terrain roughness, with surface geometric normals. The proposed segmentation model consists of a U-Net based Encoder-Decoder architecture with a MobileNet V3 Large backbone for real-time performance. At the bottom layer, the bottleneck block commonly found in a U-Net has been enhanced with an Atrous Spatial Pyramid Pooling (ASPP) block. In addition, a SEResNet based decoder instead of the classical stacked convolution blocks of U-Net has been implemented, while a concatenation layer has been added at the output. Moreover, the development of a novel memory module to dynamically update the semantic segmentation image based on certainty heat maps is also shown. The efficacy of the proposed scheme has been evaluated in real-life environments such as indoors, outdoors and subterranean (SubT) environments on a Pioneer 3AT mobile robot.                        </p>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10354930" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
+                        <div class="border-l-4 border-teal-500 pl-4">
+                            <h3 class="text-gray-800 text-xl font-bold mb-2">Memory Enabled Segmentation of Terrain for Traversability based Reactive Navigation</h3>
+                            <p class="text-gray-600 mb-4">ROBIO 2023</p>
+                        </div>
+                        <div>
+                            <p class="justify text-gray-700 mb-4">
+                                This article presents a novel 2D traversability image estimation for local reactive navigation, that attributes the fusion of a novel Convolutional Neural Network (CNN) for coarse semantic segmentation on terrain roughness, with surface geometric normals. The proposed segmentation model consists of a U-Net based Encoder-Decoder architecture with a MobileNet V3 Large backbone for real-time performance. At the bottom layer, the bottleneck block commonly found in a U-Net has been enhanced with an Atrous Spatial Pyramid Pooling (ASPP) block. In addition, a SEResNet based decoder instead of the classical stacked convolution blocks of U-Net has been implemented, while a concatenation layer has been added at the output. Moreover, the development of a novel memory module to dynamically update the semantic segmentation image based on certainty heat maps is also shown. The efficacy of the proposed scheme has been evaluated in real-life environments such as indoors, outdoors and subterranean (SubT) environments on a Pioneer 3AT mobile robot.                        
+                            </p>
+                        </div>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10354930" target="_blank" class="inline-block bg-teal-500 text-gray-800 px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
                 </div>
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/jSMMqlYomTg?autoplay=1&mute=1&loop=1&controls=0&playlist=jSMMqlYomTg" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="560" height="327" src="https://www.youtube.com/embed/jSMMqlYomTg?autoplay=1&mute=1&loop=1&controls=0&playlist=jSMMqlYomTg" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
-                        <h3 class="text-gray-800 text-xl font-bold mb-2">EAT: Environment Agnostic Traversability for reactive navigation</h3>
-                        <p class="text-gray-600 mb-4">Expert Systems with Applications 2024</p>
-                        <p class="text-gray-700 mb-4">
-                            This work presents EAT (Environment Agnostic Traversability for Reactive Navigation) a novel framework for traversability estimation in indoor, outdoor, subterranean (SubT) and other unstructured environments. The architecture provides updates on traversable regions online during the mission, adapts to varying environments, while being robust to noisy semantic image segmentation. The proposed framework considers terrain prioritization based on a novel decay exponential function to fuse the semantic information and geometric features extracted from RGB-D images to obtain the traversability of the scene. Moreover, EAT introduces an obstacle inflation mechanism on the traversability image, based on mean-window weighting module, allowing to adapt the proximity to untraversable regions. The overall architecture uses two LRASPP MobileNet V3 large Convolutional Neural Networks (CNN) for semantic segmentation over RGB images, where the first one classifies the terrain types and the second one classifies see-through obstacles in the scene. Additionally, the geometric features profile the underlying surface properties of the local scene, extracting normals from depth images. The proposed scheme was integrated with a control architecture in reactive navigation scenarios and was experimentally validated in indoor and outdoor environments as well as in subterranean environments with a Pioneer 3AT mobile robot.                        </p>
-                        <a href="#" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
+                        <div class="border-l-4 border-teal-500 pl-4">
+                            <h3 class="text-gray-800 text-xl font-bold mb-2">EAT: Environment Agnostic Traversability for reactive navigation</h3>
+                            <p class="text-gray-600 mb-4">Expert Systems with Applications 2024</p>
+                        </div>
+                        <div>
+                            <p class="justify text-gray-700 mb-4">
+                                This work presents EAT (Environment Agnostic Traversability for Reactive Navigation) a novel framework for traversability estimation in indoor, outdoor, subterranean (SubT) and other unstructured environments. The architecture provides updates on traversable regions online during the mission, adapts to varying environments, while being robust to noisy semantic image segmentation. The proposed framework considers terrain prioritization based on a novel decay exponential function to fuse the semantic information and geometric features extracted from RGB-D images to obtain the traversability of the scene. Moreover, EAT introduces an obstacle inflation mechanism on the traversability image, based on mean-window weighting module, allowing to adapt the proximity to untraversable regions. The overall architecture uses two LRASPP MobileNet V3 large Convolutional Neural Networks (CNN) for semantic segmentation over RGB images, where the first one classifies the terrain types and the second one classifies see-through obstacles in the scene. Additionally, the geometric features profile the underlying surface properties of the local scene, extracting normals from depth images. The proposed scheme was integrated with a control architecture in reactive navigation scenarios and was experimentally validated in indoor and outdoor environments as well as in subterranean environments with a Pioneer 3AT mobile robot.                        
+                            </p>
+                        </div>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0957417423034218" target="_blank" class="inline-block bg-teal-500 text-gray-800 px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
                 </div>
             </div>
@@ -682,38 +717,53 @@
             <div class="publication-body">
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/hsGlSCa12iY?autoplay=1&mute=1&loop=1&controls=0&playlist=hsGlSCa12iY" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="560" height="327" src="https://www.youtube.com/embed/hsGlSCa12iY?autoplay=1&mute=1&loop=1&controls=0&playlist=hsGlSCa12iY" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
-                        <h3 class="text-gray-800 text-xl font-bold mb-2">Belief Scene Graphs: Expanding Partial Scenes with Objects through Computation of Expectation</h3>
-                        <p class="text-gray-600 mb-4">ICRA 2024</p>
-                        <p class="text-gray-700 mb-4">
-                            In this article, we propose the novel concept of Belief Scene Graphs, which are utility-driven extensions of partial 3D scene graphs, that enable efficient high-level task planning with partial information. We propose a graph-based learning methodology for the computation of belief (also referred to as expectation) on any given 3D scene graph, which is then used to strategically add new nodes (referred to as blind nodes) that are relevant to a robotic mission. We propose the method of Computation of Expectation based on Correlation Information (CECI), to reasonably approximate real Belief/Expectation, by learning histograms from available training data. A novel Graph Convolutional Neural Network (GCN) model is developed, to learn CECI from a repository of 3D scene graphs. As no database of 3D scene graphs exists for the training of the novel CECI model, we present a novel methodology for generating a 3D scene graph dataset based on semantically annotated real-life 3D spaces. The generated dataset is then utilized to train the proposed CECI model and for extensive validation of the proposed method. We establish the novel concept of Belief Scene Graphs (BSG), as a core component to integrate expectations into abstract representations. This new concept is an evolution of the classical 3D scene graph concept and aims to enable high-level reasoning for task planning and optimization of a variety of robotics missions. The efficacy of the overall framework has been evaluated in an object search scenario, and has also been tested in a real-life experiment to emulate human common sense of unseen-objects.                        </p>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10611352" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
+                        <div class="border-l-4 border-teal-500 pl-4">
+                            <h3 class="text-gray-800 text-xl font-bold mb-2">Belief Scene Graphs: Expanding Partial Scenes with Objects through Computation of Expectation</h3>
+                            <p class="text-gray-600 mb-4">ICRA 2024</p>
+                        </div>
+                        <div>
+                            <p class="justify text-gray-700 mb-4">
+                                In this article, we propose the novel concept of Belief Scene Graphs, which are utility-driven extensions of partial 3D scene graphs, that enable efficient high-level task planning with partial information. We propose a graph-based learning methodology for the computation of belief (also referred to as expectation) on any given 3D scene graph, which is then used to strategically add new nodes (referred to as blind nodes) that are relevant to a robotic mission. We propose the method of Computation of Expectation based on Correlation Information (CECI), to reasonably approximate real Belief/Expectation, by learning histograms from available training data. A novel Graph Convolutional Neural Network (GCN) model is developed, to learn CECI from a repository of 3D scene graphs. As no database of 3D scene graphs exists for the training of the novel CECI model, we present a novel methodology for generating a 3D scene graph dataset based on semantically annotated real-life 3D spaces. The generated dataset is then utilized to train the proposed CECI model and for extensive validation of the proposed method. We establish the novel concept of Belief Scene Graphs (BSG), as a core component to integrate expectations into abstract representations. This new concept is an evolution of the classical 3D scene graph concept and aims to enable high-level reasoning for task planning and optimization of a variety of robotics missions. The efficacy of the overall framework has been evaluated in an object search scenario, and has also been tested in a real-life experiment to emulate human common sense of unseen-objects.                        
+                            </p>
+                        </div>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10611352" target="_blank" class="inline-block bg-teal-500 text-gray-800 px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
                 </div>
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/BDCMVx2GiQE?autoplay=1&mute=1&loop=1&controls=0&playlist=BDCMVx2GiQE" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="560" height="327" src="https://www.youtube.com/embed/BDCMVx2GiQE?autoplay=1&mute=1&loop=1&controls=0&playlist=BDCMVx2GiQE" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
-                        <h3 class="text-gray-800 text-xl font-bold mb-2">Leveraging Computation of Expectation Models for Commonsense Affordance Estimation on 3D Scene Graphs</h3>
-                        <p class="text-gray-600 mb-4">IROS 2024</p>
-                        <p class="text-gray-700 mb-4">
-                            This article studies the commonsense object affordance concept for enabling close-to-human task planning and task optimization of embodied robotic agents in urban environments. The focus of the object affordance is on reasoning how to effectively identify object's inherent utility during the task execution, which in this work is enabled through the analysis of contextual relations of sparse information of 3D scene graphs. The proposed framework develops a Correlation Information (CECI) model to learn probability distributions using a Graph Convolutional Network, allowing to extract the commonsense affordance for individual members of a semantic class. The overall framework was experimentally validated in a real-world indoor environment, showcasing the ability of the method to level with human commonsense.                        </p>
-                        <a href="https://www.roboticsproceedings.org/rss15/p15.pdf" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
+                        <div class="border-l-4 border-teal-500 pl-4">
+                            <h3 class="text-gray-800 text-xl font-bold mb-2">Leveraging Computation of Expectation Models for Commonsense Affordance Estimation on 3D Scene Graphs</h3>
+                            <p class="text-gray-600 mb-4">IROS 2024</p>
+                        </div>
+                        <div>
+                            <p class="justify text-gray-700 mb-4">
+                                This article studies the commonsense object affordance concept for enabling close-to-human task planning and task optimization of embodied robotic agents in urban environments. The focus of the object affordance is on reasoning how to effectively identify object's inherent utility during the task execution, which in this work is enabled through the analysis of contextual relations of sparse information of 3D scene graphs. The proposed framework develops a Correlation Information (CECI) model to learn probability distributions using a Graph Convolutional Network, allowing to extract the commonsense affordance for individual members of a semantic class. The overall framework was experimentally validated in a real-world indoor environment, showcasing the ability of the method to level with human commonsense.                        
+                            </p>
+                        </div>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10802560" target="_blank" class="inline-block bg-teal-500 text-gray-800 px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
                 </div>
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/f0tqtPVFZ2A?autoplay=1&mute=1&loop=1&controls=0&playlist=f0tqtPVFZ2A" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="560" height="327" src="https://www.youtube.com/embed/f0tqtPVFZ2A?autoplay=1&mute=1&loop=1&controls=0&playlist=f0tqtPVFZ2A" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
-                        <h3 class="text-gray-800 text-xl font-bold mb-2">Estimating Commonsense Scene Composition on Belief Scene Graphs</h3>
-                        <p class="text-gray-600 mb-4">ICRA 2025</p>
-                        <p class="text-gray-700 mb-4">
-                            This work establishes the concept of commonsense scene composition, with a focus on extending Belief Scene Graphs by estimating the spatial distribution of unseen objects. Specifically, the commonsense scene composition capability refers to the understanding of the spatial relationships among related objects in the scene, which in this article is modeled as a joint probability distribution for all possible locations of the semantic object class. The proposed framework includes two variants of a Correlation Information (CECI) model for learning probability distributions: (i) a baseline approach based on a Graph Convolutional Network, and (ii) a neuro-symbolic extension that integrates a spatial ontology based on Large Language Models (LLMs). Furthermore, this article provides a detailed description of the dataset generation process for such tasks. Finally, the framework has been validated through multiple runs on simulated data, as well as in a real-world indoor environment, demonstrating its ability to spatially interpret scenes across different room types.                         </p>
-                        <a href="#" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
+                        <div class="border-l-4 border-teal-500 pl-4">
+                            <h3 class="text-gray-800 text-xl font-bold mb-2">Estimating Commonsense Scene Composition on Belief Scene Graphs</h3>
+                            <p class="text-gray-600 mb-4">ICRA 2025</p>
+                        </div>
+                        <div>
+                            <p class="justify text-gray-700 mb-4">
+                                This work establishes the concept of commonsense scene composition, with a focus on extending Belief Scene Graphs by estimating the spatial distribution of unseen objects. Specifically, the commonsense scene composition capability refers to the understanding of the spatial relationships among related objects in the scene, which in this article is modeled as a joint probability distribution for all possible locations of the semantic object class. The proposed framework includes two variants of a Correlation Information (CECI) model for learning probability distributions: (i) a baseline approach based on a Graph Convolutional Network, and (ii) a neuro-symbolic extension that integrates a spatial ontology based on Large Language Models (LLMs). Furthermore, this article provides a detailed description of the dataset generation process for such tasks. Finally, the framework has been validated through multiple runs on simulated data, as well as in a real-world indoor environment, demonstrating its ability to spatially interpret scenes across different room types.                         
+                            </p>
+                        </div>
+                        <a href="https://arxiv.org/abs/2505.02405" target="_blank" class="inline-block bg-teal-500 text-gray-800 px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
                 </div>
             </div>
@@ -730,18 +780,22 @@
             <div class="publication-body">
                 <div class="publication-item">
                     <div class="publication-media">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&playlist=dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="560" height="327" src="https://www.youtube.com/embed/aae73HyCE_A?autoplay=1&mute=1&loop=1&controls=0&playlist=aae73HyCE_A" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="publication-info">
-                        <h3 class="text-gray-800 text-xl font-bold mb-2">Model Predictive Control for Bipedal Locomotion</h3>
-                        <p class="text-gray-600 mb-4">Humanoids 2018</p>
-                        <p class="text-gray-700 mb-4">
-                            Our model predictive control framework enables stable bipedal locomotion over uneven terrain. The system combines simplified dynamics models with online optimization to achieve robust walking and running gaits, demonstrating successful traversal of obstacles up to 15cm in height.
-                        </p>
-                        <a href="https://ieeexplore.ieee.org/document/8625833" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
+                        <div class="border-l-4 border-teal-500 pl-4">
+                            <h3 class="text-gray-800 text-xl font-bold mb-2">From Entities to Areas: A Semantically Driven Clustering for Scene-Agnostic Area Delimitation on 3D Scene Graphs</h3>
+                            <p class="text-gray-600 mb-4">IROS 2025</p>
+                        </div>
+                        <div>
+                            <p class="justify text-gray-700 mb-4">
+                                UNDER REVISION.
+                            </p>
+                        </div>
+                        <a href="#" target="_blank" class="inline-block bg-teal-500 text-gray-800 px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
                 </div>
-                <div class="publication-item">
+                <!-- <div class="publication-item">
                     <div class="publication-media">
                         <img src="humanoid-robot.jpg" alt="Humanoid Robot">
                     </div>
@@ -753,7 +807,7 @@
                         </p>
                         <a href="#" class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Publication</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
